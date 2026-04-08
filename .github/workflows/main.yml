@@ -22,7 +22,7 @@ jobs:
           - name: Build and push Docker Image
             uses: docker/build-push-action@v4
             with: 
-              context: .
+              context: ./DevOps-Project-Two-Tier-Flask-App/
               push: true
               tags: ${{ secrets.DOCKER_USERNAME }}/two-tier-app:latest
         
