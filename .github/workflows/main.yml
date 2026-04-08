@@ -4,9 +4,11 @@ on:
         branches:
             - main
 
+
 jobs:
     deploy_to_local:
         runs-on: ubuntu-latest
+        environment: Dev
         steps:
           - name: Checkout code
             uses: actions/checkout@v3
